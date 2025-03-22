@@ -4,6 +4,12 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="light_grey">#ededed</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="pastel_green">#e8f4ea</color>
+    <color name="dark_pastel_green">#b8d8be</color>
+
+
+    <color name="button_color_dark_pastel_green">#b8d8be</color>
 
 
 </resources>

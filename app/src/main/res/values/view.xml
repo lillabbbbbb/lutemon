@@ -3,7 +3,7 @@
     <dimen name="toolbar_height">70dp</dimen>
     <dimen name="toolbar_header_size">40sp</dimen>
     <dimen name="page_margin">20dp</dimen>
-    <dimen name="button_width_two">190dp</dimen>
+    <dimen name="button_width_two">180dp</dimen>
     <dimen name="button_width_single">370dp</dimen>
     <dimen name="button_margin_bottom">10dp</dimen>
     <dimen name="button_radius">10dp</dimen>

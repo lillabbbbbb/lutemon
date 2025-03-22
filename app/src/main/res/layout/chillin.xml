@@ -49,7 +49,7 @@
             android:id="@+id/button"
             android:layout_width="@dimen/button_width_two"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="Move to training"
             android:layout_marginLeft="@dimen/page_margin"
             android:layout_marginBottom="@dimen/button_margin_bottom"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -59,7 +59,7 @@
             android:id="@+id/button2"
             android:layout_width="@dimen/button_width_two"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="Move to Battle"
 
             android:layout_marginRight="@dimen/page_margin"
             android:layout_marginBottom="@dimen/button_margin_bottom"

@@ -87,7 +87,7 @@
                 app:layout_constraintBottom_toTopOf="@id/colorName"
 
 
-                app:srcCompat="@drawable/circle" />
+                app:srcCompat="@drawable/pink_circle" />
 
             <CheckBox
                 android:id="@+id/checkBox"

@@ -11,4 +11,11 @@
     <dimen name="battle_arena_card_width">160dp</dimen>
     <dimen name="battle_arena_card_height">250dp</dimen>
 
+    //card item attributes
+
+    <dimen name="card_corner_radius">10dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="card_height">150dp</dimen>
+
 </resources>

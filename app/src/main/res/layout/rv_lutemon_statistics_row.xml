@@ -8,20 +8,21 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constractLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
+            android:id="@+id/StatisticsCardView"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_height="@dimen/card_height"
+            android:layout_marginStart="@dimen/card_margin"
+            android:layout_marginTop="@dimen/card_margin"
+            android:layout_marginEnd="@dimen/card_margin"
+            android:layout_marginBottom="@dimen/card_margin"
 
-            app:cardBackgroundColor="@color/pastel_green"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/card_color"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +49,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="4dp"
 
@@ -99,45 +100,51 @@
                     tools:layout_editor_absoluteY="71dp">
 
 
-                    <TextView
-                        android:id="@+id/battles"
-                        android:layout_width="@dimen/stat_element_header_width"
-                        android:layout_height="wrap_content"
-                        android:text="Battles:"
-                        android:textAlignment="center"
-                        android:textStyle="bold"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                    <ScrollView
+                        android:id="@+id/statisticsScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:layout_editor_absoluteX="-197dp"
+                        tools:layout_editor_absoluteY="0dp">
 
-                    <TextView
-                        android:id="@+id/wins"
-                        android:layout_width="@dimen/stat_element_header_width"
-                        android:layout_height="wrap_content"
-                        android:text="Wins:"
-                        android:textAlignment="center"
-                        android:textStyle="bold"
-                        app:layout_constraintLeft_toRightOf="@id/battles"
-                        app:layout_constraintTop_toBottomOf="@id/atk" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/training"
-                        android:layout_width="@dimen/stat_element_header_width"
-                        android:layout_height="wrap_content"
-                        android:text="Training:"
-                        android:textAlignment="center"
-                        android:textStyle="bold"
-                        app:layout_constraintLeft_toRightOf="@id/wins"
-                        app:layout_constraintTop_toBottomOf="@id/def" />
+                            <TextView
+                                android:id="@+id/battles"
+                                android:layout_width="@dimen/stat_element_header_width"
+                                android:layout_height="wrap_content"
+                                android:text="Battles:"
+                                android:textAlignment="center"
+                                android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/experience"
-                        android:layout_width="@dimen/stat_element_header_width"
-                        android:layout_height="wrap_content"
-                        android:text="Avg. training time:"
-                        android:textAlignment="center"
-                        android:textStyle="bold"
-                        app:layout_constraintLeft_toRightOf="@id/training"
-                        app:layout_constraintTop_toBottomOf="@id/hp" />
+                            <TextView
+                                android:id="@+id/wins"
+                                android:layout_width="@dimen/stat_element_header_width"
+                                android:layout_height="wrap_content"
+                                android:text="Wins:"
+                                android:textAlignment="center"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/training"
+                                android:layout_width="@dimen/stat_element_header_width"
+                                android:layout_height="wrap_content"
+                                android:text="Training:"
+                                android:textAlignment="center"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/experience"
+                                android:layout_width="@dimen/stat_element_header_width"
+                                android:layout_height="wrap_content"
+                                android:text="Avg. training time:"
+                                android:textAlignment="center"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </ScrollView>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
